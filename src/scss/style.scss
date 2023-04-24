@@ -1,12 +1,13 @@
 @import "fonts";
 // ###################################################
 $container: clamp(320px,100%,1440px);
-$color_black: #000000;
+$color_black: #202020;
 $color_white: #ffffff;
+$color_yellow: #FFDE31;
 $main_margin: 50px;
 $main_padding: 20px;
-$main_font:"Arial", sans-serif;
-$second_font: "Arial", sans-serif;
+$main_font:"Montserrat", sans-serif;
+$second_font: "Montserrat", sans-serif;
 $h1:64px;
 $h2:48px;
 $h3:32px;
@@ -33,6 +34,12 @@ $maxWidth: 1440;
   @include adaptive-font(40,20);
   font-weight: bold;
   color: #ff0000;
+}
+@mixin nav-text {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  color: $color_white;
 }
 // @include large-text;
 // ###################################################
@@ -88,12 +95,16 @@ input {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: $color_black;
 }
 .container{
   width: $container;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .main{
   flex: 1 1 auto;
 }
 /* ########################################################## */
+
+@import "header";
