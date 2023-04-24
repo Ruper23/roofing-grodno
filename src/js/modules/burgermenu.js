@@ -1,6 +1,6 @@
 export function burger() {
   let burgIcon = document.querySelector('.burger__icon');
-  let burgMenu = document.querySelector('.nav__links');
+  let burgMenu = document.querySelector('.navigation');
   const bodyFixed = document.querySelector('body')
   if (burgIcon) {
 

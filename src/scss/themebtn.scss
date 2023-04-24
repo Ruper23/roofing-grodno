@@ -1,0 +1,51 @@
+.theme-btn {
+  position: absolute;
+  right: calc((100vw - 1440px) / 2 + 18px);
+  top: 18px;
+  width: 40px;
+  height: 20px;
+  background-color: $color_yellow;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 2px $color_black;
+  @media (max-width: 1440px){
+    right:18px;
+  }
+}
+.theme-btn.active{
+  background-color: $color_white;
+}
+.theme-btn::before{
+  transition: all 0.3s ease;
+  content: "🌙"; // ☀
+  position: absolute;
+  color: $color_yellow;
+  line-height: 16px;
+  font-size: 12px;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color_black;
+  border: solid $color_yellow 2px;
+  z-index: 3;
+}
+.theme-btn.active::before{
+  content: "☀"; // 🌙
+  position: absolute;
+  color: $color_yellow;
+  line-height: 16px;
+  font-size: 14px;
+  top: 0;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color_black;
+  border: solid $color_white 2px;
+  z-index: 3;
+}
+.theme-btn:has(.active) > .wrapper{
+  background-color: $color_white;
+}
