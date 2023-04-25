@@ -31,7 +31,7 @@ $maxWidth: 1440;
 
 @mixin large-text {
   font-family: Arial;
-  @include adaptive-font(40,20);
+  @include adaptiv-font(40,20);
   font-weight: bold;
   color: #ff0000;
 }
@@ -39,13 +39,34 @@ $maxWidth: 1440;
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 500;
-  color: $color_white;
+}
+@mixin h1 {
+  font-family: "Montserrat";
+  @include adaptiv-font(64,28,83.2,40);
+  font-weight: 400;
+}
+@mixin h2 {
+  font-family: "Montserrat";
+  @include adaptiv-font(32,16,42,28);
+  font-weight: 700;
+}
+@mixin h3 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+}
+@mixin paragraph{
+  font-family: "Montserrat";
+  @include adaptiv-font(16,14,22,18);
+  font-weight: 400;
 }
 // @include large-text;
 // ###################################################
 
 
-
+*{
+  transition: all 0.3s ease;
+}
 html,
 body {
   width: 100%;
@@ -90,13 +111,18 @@ input {
   box-sizing: border-box;
   border: none;
 }
+img{
+  max-width: 100%;
+}
 .wrapper{
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   background-color: $color_black;
+  color: $color_white;
 }
+
 .container{
   width: $container;
   margin: 0 auto;
@@ -105,7 +131,86 @@ input {
 .main{
   flex: 1 1 auto;
 }
+.paragraph{
+  @include paragraph;
+}
+.h1-title{
+  @include h1; 
+}
+.h2-title{
+  @include h2;
+}
+.h3-title{
+  @include h3;
+}
+.button{
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: $color_yellow;
+  width: 210px;
+  height: 50px;
+  border-radius: 2px;
+  @media (max-width: 768px){
+    font-size: 16px;
+    line-height: 40px;
+    width: 160px;
+    height: 40px;
+  } 
+}
+.button:hover{
+  background-color: transparent;
+  box-shadow: 0 0 0 2px $color_yellow inset, 0 0 5px 0 $color_white;
+  color: $color_yellow;
+}
+.links{
+  color:$color_white;
+}
+.svg-logo{
+  fill: $color_yellow;
+}
+
+/* Lights theme */
+.wrapper.lights{
+  background-color: $color_white;
+  color: $color_black;
+}
+.button.lights{
+  background-color: $color_black;
+  color: $color_yellow;
+}
+.button.lights:hover{
+  background-color: transparent;
+  box-shadow: 0 0 0 2px $color_black inset, 0 0 5px 0 $color_yellow;
+  color: $color_black;
+}
+.links.lights{
+  position: relative;
+  color:$color_black;
+}
+.links.lights:hover{
+  color:$color_black;
+}
+.links.lights:before{
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: $color_black;
+  
+}
+.links.lights:hover::before{
+  width: 100%;
+}
+.svg-logo.lights{
+  fill: $color_black;
+}
+
 /* ########################################################## */
 @import "burger";
 @import "header";
-@import "themebtn"
+@import "themebtn";
+@import "home";

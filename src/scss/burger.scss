@@ -41,6 +41,9 @@
   height: 2px;
   background-color: $color_white;
 }
+.burger__icon span.lights{
+  background-color: $color_black;
+}
 .burger__icon span:first-child {
   top: 0px;
 }

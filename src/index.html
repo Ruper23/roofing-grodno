@@ -9,7 +9,25 @@
   <div class="wrapper">
     @@include('html/header.html',{})
     <main class="main">
+      <div class="container">
+        <section class="home">
+          <div class="description">
+            <h1 class="description__title h1-title">Кровельные работы</h1>
+            <p class="description__subtitle h2-title">Квалификация специалистов и большой опыт гарантируют качественный
+              монтаж крыши</p>
+            <p class="description__paragraph paragraph">Гродно и Гродненская область</p>
+            <button class="description__button button">Заказать</button>
+            <div class="description__contacts">
+              <a class="links paragraph" href="mailto:roofing@info.com">roofing@info.com</a>
+              <a class="links paragraph" href="@telegram">@telegram</a>
+            </div>
+          </div>
 
+          <div class="picture">
+            <img src="img/home.png" alt="Home">
+          </div>
+        </section>
+      </div>
     </main>
     @@include('html/footer.html',{})
   </div>

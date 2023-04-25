@@ -1,6 +1,6 @@
 
 .header__wrap {
-  margin: $main_margin 0;
+  margin: $main_margin 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +26,12 @@
   @media (max-width: 425px){
     width: 100%;
     border: none;
+  }
+}
+.navigation.lights{
+  background-color: $color_white;
+  @media (max-width: 768px){
+    border-right: 1px solid $color_black;
   }
 }
 .navigation:before{
@@ -81,16 +87,16 @@
 .navigation__links-link a,
 .phone a{
   @include nav-text;
-  transition: all 0.3s ease;
+ 
 }
-.navigation__links-link a:hover,
-.phone a:hover{
-  color: $color_yellow;
-}
+
 
 .phone {
   display: flex;
   gap: 40px;
+}
+.phone .links{
+  @include adaptiv-font(18,15,23,20);
 }
 .logo{
   display: flex;
@@ -99,7 +105,7 @@
     flex: 1 1 150px;
   }
 }
-.logo img{
+.svg-logo{
   @media (max-width: 500px){
     width: 70%;
   }
@@ -148,7 +154,4 @@
     flex-direction: column;
     gap: 20px;
   }
-}
-.phone a{
-  font-size: 14px;
 }
