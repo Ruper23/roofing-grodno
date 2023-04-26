@@ -46,6 +46,3 @@
   border: solid $color_white 2px;
   z-index: 3;
 }
-.theme-btn:has(.active) > .wrapper{
-  background-color: $color_white;
-}
