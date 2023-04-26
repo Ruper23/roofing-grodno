@@ -1,0 +1,45 @@
+.services {
+  margin: 100px 0;
+  display: flow-root;
+  padding: 0 15px;
+}
+
+.services__title {
+  margin: 100px 0;
+  text-align: center;
+}
+
+
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  
+}
+.service{
+  flex: 0 1 450px;
+}
+
+.service:nth-child(4),
+.service:nth-child(5) {
+  flex: 0 1 690px;
+
+}
+
+.service__title {
+  margin-bottom: 50px;
+}
+.service__title.lights{
+  color: $color_black;
+}
+
+
+.service__img {
+  margin-bottom: 30px;
+}
+
+.service__description {
+
+}
+

@@ -6,6 +6,7 @@ export function themeChange() {
   const links = document.querySelectorAll('.links')
   const navigation = document.querySelector('.navigation')
   const burgerSpan = document.querySelectorAll('.burger__icon span')
+  const servicesTitle = document.querySelectorAll('.service__title')
   themeBtn.addEventListener('click', () => {
     wrapper.classList.toggle('lights')
     themeBtn.classList.toggle('active')
@@ -17,6 +18,9 @@ export function themeChange() {
     })
     burgerSpan.forEach(span => {
       span.classList.toggle('lights')
+    })
+    servicesTitle.forEach(title => {
+      title.classList.toggle('lights')
     })
 
   })
