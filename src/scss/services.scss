@@ -94,10 +94,13 @@
 }
 
 .service__description{
+
   position: relative;
   transition: all 0.3s ease;
-  height: 40px;
-  overflow-y: hidden;
+  @media (max-width: 660px){
+    height: 40px;
+    overflow-y: hidden;
+  }
 }
 .service__description.active{
   height: 100%;
