@@ -635,8 +635,6 @@ img {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  height: 40px;
-  overflow-y: hidden;
 }
 
 .service__description.active {
@@ -822,6 +820,11 @@ img {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 200px;
             flex: 1 1 200px;
+  }
+
+  .service__description {
+    height: 40px;
+    overflow-y: hidden;
   }
 
   .read-more {
