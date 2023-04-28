@@ -8,6 +8,8 @@ export function themeChange() {
   const burgerSpan = document.querySelectorAll('.burger__icon span')
   const servicesTitle = document.querySelectorAll('.service__title')
   const readMoreBtns = document.querySelectorAll('.read-more')
+  const blockNumber = document.querySelectorAll('.block__number')
+  const blockInfo = document.querySelectorAll('.block__info')
   themeBtn.addEventListener('click', () => {
     wrapper.classList.toggle('lights')
     themeBtn.classList.toggle('active')
@@ -25,6 +27,12 @@ export function themeChange() {
     })
     readMoreBtns.forEach(btn => {
       btn.classList.toggle('lights')
+    })
+    blockNumber.forEach(num => {
+      num.classList.toggle('lights')
+    })
+    blockInfo.forEach(num => {
+      num.classList.toggle('lights')
     })
 
   })

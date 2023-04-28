@@ -47,12 +47,12 @@ $maxWidth: 1440;
 }
 @mixin h2 {
   font-family: "Montserrat";
-  @include adaptiv-font(32,16,42,28);
+  @include adaptiv-font(32,22,42,28);
   font-weight: 700;
 }
 @mixin h3 {
   font-family: "Montserrat";
-  font-size: 24px;
+  @include adaptiv-font(24,18,30,22);
   font-weight: 700;
 }
 @mixin paragraph{
@@ -219,3 +219,5 @@ img{
 @import "themebtn";
 @import "home";
 @import "services";
+@import "video";
+@import "about";
