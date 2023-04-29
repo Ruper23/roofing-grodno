@@ -129,7 +129,10 @@
           </div>
         </section>
         <section class="video">
-          <video class="video__item" src="video/video1.webm" autoplay muted loop></video>
+          <video preload="auto" poster="video/video1.jpg" class="video__item" autoplay muted loop>
+            <source src="video/video1.mp4" type="video/mp4">
+            <source src="video/video1.webm" type="video/webm">
+          </video>
         </section>
         <section class="about" id="about">
           <h2 class="about__title h2-title">О Нас</h2>
