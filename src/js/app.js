@@ -4,7 +4,7 @@ import * as themeButton from "./modules/themebtn.js"
 import * as readMore from "./modules/readmore.js"
 
 //import * as tabMenu from "./modules/tabs.js"
-//import * as Swiper from "./modules/swiper.js"
+import * as Swiper from "./modules/swiper.js"
 
 webpCheck.isWebp()
 burgerMenu.burger()
@@ -12,4 +12,4 @@ themeButton.themeChange()
 readMore.readMoreFunc()
 
 //tabMenu.tabs()
-//Swiper.Swiper()
+Swiper.swiper()
