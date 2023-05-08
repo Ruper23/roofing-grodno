@@ -6,13 +6,10 @@ export const swiper = new Swiper('.swiper', {
   slidesPerView: 1.45,
   centeredSlides: true,
   lazyLoading: true,
+  autoHeight: true,
   // Navigation arrows
   navigation: {
     autoHeight: true,
-
-
-    // 
-
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
@@ -29,12 +26,12 @@ export const swiper = new Swiper('.swiper', {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
+
     },
     // when window width is >= 480px
     480: {
       slidesPerView: 1.45,
-
     },
     // when window width is >= 640px
     640: {

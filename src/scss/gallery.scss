@@ -1,10 +1,16 @@
 .gallery {
   padding: 0 15px;
+  position: relative;
+  @media (max-width:900px) {
+    display: flow-root;
+    margin: 0 0 50px 0;
+    
+  }
 }
 
 .gallery__title {
   text-align: center;
-  margin: 100px 0 0;
+  margin: 100px 0;
   text-align: center;
   @media (max-width:1024px) {
     margin: 50px 0 30px 0;
@@ -54,20 +60,16 @@
     height: 100px;
     font-size: 35px;
   }
-  @media (min-width: 768px){
+  @media (min-width: 770px){
+    display: flex;
     width: 70px;
     height: 70px;
     font-size: 35px;
   }
-  @media (min-width: 425px){
-    display: flex;
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-  }
-  @media (min-width: 310px){
+  @media (min-width: 320px){
     display: none;
   }
+ 
 }
 .swiper-button-next{
   transform: rotate(90deg);
@@ -78,19 +80,21 @@
  width: 0;
  height: 0;
 }
+.swiper-pagination{
+  @media (max-width: 768px){
+  display: none;
+  }
+
+}
 .swiper-pagination-bullet {
   width: 40px;
   height: 40px;
   border: solid 2px $color_black;
   background-color: $color_yellow;
- 
-  @media (max-width: 768px){
-    width: 20px;
-    height: 20px;
+  @media (max-width: 1024px){
+    width: 30px;
+    height: 30px;
   
-  }
-  @media (max-width: 420px){
-    display: none;
   }
 }
 .swiper-slide-next,
@@ -100,4 +104,7 @@
 }
 .swiper-slide-active{
   transform: scale(1.2);
+}
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+  bottom: -50px;
 }

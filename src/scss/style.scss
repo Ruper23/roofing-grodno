@@ -107,15 +107,21 @@ h6 {
   margin: 0;
   padding: 0;
 }
-input {
-  outline: none;
+input,textarea {
+  outline: transparent;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   border: none;
 }
+
 img{
   max-width: 100%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 .wrapper{
   width: 100%;
@@ -170,6 +176,9 @@ img{
 .links{
   color:$color_white;
 }
+.links:hover{
+  color: $color_yellow;
+}
 .svg-logo{
   fill: $color_yellow;
 }
@@ -222,3 +231,5 @@ img{
 @import "video";
 @import "about";
 @import "gallery";
+@import "contacts";
+@import "footer";

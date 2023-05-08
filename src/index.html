@@ -159,12 +159,46 @@
               <div class="block__number">03</div>
               <div class="block__info">
                 <p class="paragraph">
-                  Гарантия на 5 лет на выполненую работу, прописана в договоре. </p>
+                  Гарантия на 5 лет на выполненую работу.</p>
               </div>
             </div>
           </div>
         </section>
         @@include('html/gallery.html',{})
+        <section class="contacts" id="contacts">
+          <h2 class="contacts__title h2-title">Связаться с нами</h2>
+          <div class="contacts__wrap">
+            <ul class="contacts__contact">
+              <li class="contact"><a class="links paragraph" href="tel:+375 29 555 55 55">+375 29 555 55 44</a></li>
+              <li class="contact"><a class="links paragraph" href="tel:+375 29 555 55 55">+375 29 555 55 44</a></li>
+            </ul>
+            <ul class="contacts__contact">
+              <li class="contact"><a class="links paragraph" href="mailto:roofing@info.com">roofing@info.com</a></li>
+              <li class="contact"><a class="links paragraph" href="https://t.me/roofing-grodno">@roofing-grodno</a></li>
+              <li class="contact"><a class="links paragraph"
+                  href="viber://chat?number=%2B375295555555">roofing-grodno</a></li>
+            </ul>
+            <ul class="contacts__contact">
+              <li class="contact"><a class="links paragraph" href="#insta">@instagram</a></li>
+              <li class="contact"><a class="links paragraph" href="#tiktok">@tiktok</a></li>
+            </ul>
+          </div>
+          <p class="contacts__discription paragraph">
+            Используйте нашу контактную форму для всех информационных запросов или свяжитесь с нами напрямую, используя
+            контактную информацию
+          </p>
+          <form action="POST" class="contacts__form">
+            <div class="form__wrap">
+              <div class="form__inputs">
+                <input type="text" id="form__name" name="name" class="input-name inputs" placeholder="Имя">
+                <input type="number" id="form__number" name="number" class="input-number inputs" placeholder="Телефон">
+              </div>
+              <textarea name="message" id="form__text" cols="30" rows="3" class="input-text inputs"
+                placeholder="Сообщение"></textarea>
+            </div>
+            <button class="form__button button" type="submit">Отправить</button>
+          </form>
+        </section>
       </div>
     </main>
     @@include('html/footer.html',{})
