@@ -139,7 +139,8 @@ input[type=number]::-webkit-outer-spin-button {
 .main{
   flex: 1 1 auto;
 }
-  .paragraph{
+  .paragraph,
+  .footer-paragraph{
     @include paragraph;
   }
   .h1-title{
@@ -173,10 +174,12 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 0 0 2px $color_yellow inset, 0 0 5px 0 $color_white;
   color: $color_yellow;
 }
-.links{
+.links,
+.footer-links{
   color:$color_white;
 }
-.links:hover{
+.links:hover,
+.footer-links:hover{
   color: $color_yellow;
 }
 .svg-logo{

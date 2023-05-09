@@ -1,0 +1,35 @@
+.footer{
+  background-color: $color_black;
+  border-top: 1px solid $color_white;
+}
+
+.footer__navigation {
+  margin: 50px 0;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-paragraph{
+  color: $color_white;
+}
+
+.partners {}
+
+
+
+.footer__phone,
+.footer__contacts,
+.partners {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__contacts {}
+
+.footer__rigths {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
