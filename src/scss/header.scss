@@ -66,24 +66,26 @@
       
     }
   }
-  .navigation__links-link a{
+  .navigation__links-link .links{
     position: relative;
   }
-  .navigation__links-link a:before{
+  .navigation__links-link .links:before{
     content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
     width: 0%;
-    height: 1px;
+    height: 2px;
     background-color: $color_yellow;
     transition: all 0.3s;
   }
-  .navigation__links-link a:hover:before{
+  .navigation__links-link .links.lights:before{
+    background-color: $color_black;
+  }
+  .navigation__links-link .links:hover:before{
     width: 100%;
   }
-  .navigation__links-link a,
-  .phone a{
+  .links{
     @include nav-text;
    
   }
