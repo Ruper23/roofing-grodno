@@ -91,12 +91,13 @@
 
 .form__button {
   margin: 0 auto;
+  transition: all 0.3s ease;
 }
-input:placeholder,
-textarea:-moz-placeholder{
-  padding: 17px 50px;
-  color: #ffffff2f;
-}
+// input:-moz-placeholder,
+// textarea:-moz-placeholder{
+//   padding: 17px 50px;
+//   color: #ffffff2f;
+// }
 .inputs {
   width: 100%;
   background-color: transparent;
@@ -119,4 +120,10 @@ textarea:-moz-placeholder{
 .inputs.lights{
   border: 1px solid $color_black;
   color: $color_black;
+}
+.contacts__contact:nth-child(2){
+  transition-delay: 0.2s;
+}
+.contacts__contact:nth-child(3){
+  transition-delay: 0.4s;
 }
