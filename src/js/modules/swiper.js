@@ -5,7 +5,8 @@ export const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   slidesPerView: 1.45,
   centeredSlides: true,
-  lazyLoading: true,
+  preloadImages: false,
+  lazy: true,
   autoHeight: true,
   // Navigation arrows
   navigation: {
