@@ -3,6 +3,7 @@ import * as burgerMenu from "./modules/burgermenu.js"
 import * as themeButton from "./modules/themebtn.js"
 import * as readMore from "./modules/readmore.js"
 import * as scroll from "./modules/animateonscroll.js"
+import * as tgAlert from "./modules/tgalert.js"
 
 //import * as tabMenu from "./modules/tabs.js"
 import * as Swiper from "./modules/swiper.js"
@@ -12,6 +13,7 @@ burgerMenu.burger()
 themeButton.themeChange()
 readMore.readMoreFunc()
 scroll.scrollAnimation()
+tgAlert.tgalert()
 
 //tabMenu.tabs()
 Swiper.swiper()
