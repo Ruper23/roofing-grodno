@@ -1,6 +1,6 @@
 export function tgalert() {
-  const tgToken = ''
-  const tgChatId = ''
+  const tgToken = '6019123175:AAE-obC5pgJBLiLIxDzvqC9F2j_gbK2VEFk'
+  const tgChatId = '-1001836439135'
   const tgUriApi = `https://api.telegram.org/bots${tgToken}/sendMessage`
 
   const contactsForm = document.querySelector('.contacts__form')
@@ -21,6 +21,12 @@ export function tgalert() {
       this.name.value = ''
       this.number.value = ''
       this.message.value = ''
+    })
+    .catch((err) => {
+      console.warn(err);
+    })
+    .finaly(()=>{
+      return
     })
 
   })
