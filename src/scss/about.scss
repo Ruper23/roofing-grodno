@@ -5,13 +5,17 @@
 
 .about__title {
   text-align: center;
-  margin: 0 0 100px 0;
   padding: 20px 0 0 0;
+}
+.about__subtitle{
+  text-align: center;
+  font-family: Montserrat;
+  font-style: italic;
+  margin: 20px 0 100px 0;
   @media (max-width: 1024px){
-    margin: 0 0 50px 0;
+    margin: 10px 0 50px 0;
   } 
 }
-
 
 .about__description {
   display: flex;

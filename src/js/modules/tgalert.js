@@ -4,6 +4,13 @@ export function tgalert() {
   const tgUriApi = `https://api.telegram.org/bots${tgToken}/sendMessage`
 
   const contactsForm = document.querySelector('.contacts__form')
+  const sendSuccess = document.querySelector('.send-success')
+  const showAlert = () =>{
+    sendSuccess.style.opacity = '1'
+    setTimeout(()=>{
+      sendSuccess.style.opacity = '0'
+    },3000)
+  }
 
   contactsForm.addEventListener('submit', function(e){
     e.preventDefault()
@@ -21,12 +28,13 @@ export function tgalert() {
       this.name.value = ''
       this.number.value = ''
       this.message.value = ''
+      showAlert()
     })
     .catch((err) => {
       console.warn(err);
     })
-    .finaly(()=>{
-      return
+    .finally(()=>{
+      console.log('Отправлено');
     })
 
   })
