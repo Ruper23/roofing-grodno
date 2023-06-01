@@ -23,7 +23,6 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   slidesPerView: 1.45,
   centeredSlides: true,
-  preloadImages: false,
   lazy: true,
   autoHeight: true,
 
