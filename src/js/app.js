@@ -23,7 +23,6 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   slidesPerView: 1.45,
   centeredSlides: true,
-  lazy: true,
   autoHeight: true,
 
   // Navigation arrows

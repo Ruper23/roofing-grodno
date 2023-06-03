@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html',{
-"title":"Кровельные работы в гродно и облости"
+"title":"Кровельные работы в гродно и облости, кровельные работы под ключ, монтаж кровли в Гродно"
 })
 
 
@@ -10,13 +10,13 @@
     @@include('html/header.html',{})
     <main class="main">
       <div class="container">
-        <section class="home">
+        <section class="home" id="home">
           <div class="description">
             <h1 class="description__title h1-title">Кровельные работы</h1>
             <p class="description__subtitle h2-title">Квалификация специалистов и большой опыт гарантируют качественный
               монтаж крыши</p>
             <p class="description__paragraph paragraph">Гродно и Гродненская область</p>
-            <a href="#contacts"><button class="description__button button">Заказать</button></a>
+            <a href="#contacts"><button class="description__button button" role="to contacts section" >Заказать</button></a>
             <div class="description__contacts">
               <a class="links paragraph" href="viber://chat?number=%2B375336857600">Viber</a>
               <a class="links paragraph" href="https://t.me/KrovlyaGrodno">Telegram</a>
@@ -136,7 +136,7 @@
         </section>
         <section class="about" id="about">
           <h2 class="about__title h2-title">О Нас</h2>
-          <h4 class="paragraph about__subtitle">“РАБОТАЕМ НА СОВЕСТЬ И ЛЮБИМ СВОЁ ДЕЛО”</h4>
+          <p class="paragraph about__subtitle">“РАБОТАЕМ НА СОВЕСТЬ И ЛЮБИМ СВОЁ ДЕЛО”</p>
           <div class="about__description">
             <div class="block hidden">
               <div class="block__number">01</div>
@@ -194,8 +194,8 @@
           <form class="contacts__form hidden" id="tg">
             <div class="form__wrap">
               <div class="form__inputs">
-                <input type="text" id="form__name" name="name" class="input-name inputs" placeholder="Имя" required>
-                <input type="number" id="form__number" name="phone" class="input-number inputs" placeholder="Телефон" required>
+                <input type="text" id="form__name" name="name" class="input-name inputs" placeholder="Имя *" required>
+                <input type="number" id="form__number" name="phone" class="input-number inputs" placeholder="Телефон *" required>
               </div>
               <textarea name="message" id="form__text" cols="30" rows="3" class="input-text inputs"
                 placeholder="Сообщение"></textarea>

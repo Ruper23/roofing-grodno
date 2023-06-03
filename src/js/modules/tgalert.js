@@ -1,6 +1,6 @@
 export function tgalert() {
-  const tgToken = '6019123175:AAE-obC5pgJBLiLIxDzvqC9F2j_gbK2VEFk'
-  const tgChatId = '-1001836439135'
+  const tgToken = '6270764658:AAFkir2i5ZvmwNVRlTQNAdSJqp1fJfNCyWE'
+  const tgChatId = '-1001591890897'
   const tgUriApi = `https://api.telegram.org/bot${ tgToken }/sendMessage`
 
   const contactsForm = document.getElementById('tg')
@@ -14,10 +14,10 @@ export function tgalert() {
 
   contactsForm.addEventListener('submit', function(e){
     e.preventDefault()
-    let tgMessage = `<b>Заявка с сайта</b> \n`
-    tgMessage += `<b>Отправитель:</b> ${this.name.value}</b>\n`
-    tgMessage += `<b>Номер телефона:</b> ${this.phone.value}</b>\n`
-    tgMessage += `<b>Сообщение:</b> ${this.message.value}</b>`
+    let tgMessage = `<b>Заявка с сайта</b>\n`
+    tgMessage += `<b>Отправитель:</b>  ${this.name.value}\n`
+    tgMessage += `<b>Номер телефона:</b>  ${this.phone.value}\n`
+    tgMessage += `<b>Сообщение:</b> \n "${this.message.value}"`
 
     axios.post(tgUriApi, {
       chat_id: tgChatId,
