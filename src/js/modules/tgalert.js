@@ -1,6 +1,6 @@
 export function tgalert() {
-  const tgToken = '6270764658:AAFkir2i5ZvmwNVRlTQNAdSJqp1fJfNCyWE'
-  const tgChatId = '-1001591890897'
+  const tgToken = ''
+  const tgChatId = ''
   const tgUriApi = `https://api.telegram.org/bot${ tgToken }/sendMessage`
 
   const contactsForm = document.getElementById('tg')
