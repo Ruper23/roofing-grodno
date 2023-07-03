@@ -1,0 +1,152 @@
+.services {
+  margin: 100px 0;
+  display: flow-root;
+  padding: 0 15px;
+  @media (max-width:1024px) {
+    margin: 0;
+    
+  }
+}
+
+.services__title {
+  margin: 100px 0;
+  text-align: center;
+  @media (max-width:1024px) {
+    margin: 50px 0 50px 0;
+    
+  }
+}
+
+
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  @media (max-width:1167px) {
+    justify-content: space-around;
+    
+  }
+  @media (max-width:660px) {
+    gap: 30px;
+  }
+  @media (max-width:560px) {
+    justify-content: center;
+  }
+ 
+}
+.service{
+  flex:  1 450px;
+  display: flex;
+  flex-direction: column;
+  
+  @media (max-width:1167px) {
+
+    flex: 1 1 300px;
+  }
+  @media (max-width:660px) {
+    flex: 1 1 200px;
+  
+  }
+  @media (max-width:560px) {
+    flex: 0 1 350px;
+  }
+}
+
+.service:nth-child(4),
+.service:nth-child(5) {
+  flex: 1 1 690px;
+  @media (max-width:1167px) {
+
+    flex: 1 1 300px;
+  }
+  @media (max-width:660px) {
+    flex: 1 1 200px;
+  }
+  @media (max-width:560px) {
+    flex: 0 1 350px;
+  }
+}
+
+.service__title {
+  margin-bottom: 50px;
+  @media (max-width: 768px){
+    margin-bottom: 30px;
+    height: 60px;
+  }
+  @media (max-width: 560px){
+    height: auto;
+  }
+}
+.service__title.lights{
+  color: $color_black;
+}
+
+
+.service__img {
+  margin-bottom: 30px;
+  width: 100%;
+
+}
+.service__img img{
+  min-width: 100%;
+  object-fit: contain;
+}
+
+.service__description{
+
+  position: relative;
+  transition: all 0.3s ease;
+  @media (max-width: 660px){
+    height: 40px;
+    overflow-y: hidden;
+  }
+}
+.service__description.active{
+  height: 100%;
+  transition: all 0.6s ease;
+  overflow-y: auto;
+}
+.read-more{
+  display: none;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  color: $color_yellow;
+  cursor: pointer;
+  margin: 0 auto;
+  opacity: .5;
+  @media (max-width: 660px){
+    display: flex;
+  }
+}
+.read-more.lights{
+  color: $color_black;
+}
+.read-more.active{
+  transform: rotate(180deg);
+}
+
+.service:nth-child(2){
+  transition-delay: 0.2s;
+}
+.service:nth-child(3){
+  transition-delay: 0.4s;
+}
+.service:nth-child(4){
+  transition-delay: 0.2s;
+}
+.service:nth-child(5){
+  transition-delay: 0.4s;
+}
+.service:nth-child(6){
+  transition-delay: 0.2s;
+}
+.service:nth-child(7){
+  transition-delay: 0.4s;
+}
+.service:nth-child(8){
+  transition-delay: 0.6s;
+}
